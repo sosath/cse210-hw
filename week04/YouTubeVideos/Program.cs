@@ -28,7 +28,6 @@ class Program
         v3.AddComment(new Comment("Developer_Prime", "Excellent content!"));
         videos.Add(v3);
 
-        // Show information
         foreach (var video in videos)
         {
             video.DisplayVideoDetails();
