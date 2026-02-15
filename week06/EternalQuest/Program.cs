@@ -1,10 +1,7 @@
 using System;
-
-// CREATIVIDAD Y EXCESO DE REQUISITOS:
-// 1. Sistema de Niveles: El usuario sube de nivel cada 1000 puntos.
-// 2. Títulos Dinámicos: El usuario recibe un título según su nivel (ej. "Nivel 2: Guerrero").
-// 3. Animaciones de Consola: Se añadieron efectos visuales sencillos al ganar puntos.
-
+// Creativity and exceeding requirements:
+// Level System: The user levels up every 1000 points and dynamic titles, the user receives a title according to their level (example, "Level 2: Warrior").
+// Simple visual effects were added when earning points.
 class Program
 {
     static void Main(string[] args)

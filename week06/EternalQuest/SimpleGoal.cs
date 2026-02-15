@@ -2,20 +2,20 @@ public class SimpleGoal : Goal
 {
     private bool _isComplete;
 
-    public SimpleGoal(string name, string description, string points) : base(name, description, points)
+    public SimpleGoal(string name, string description, int points) : base(name, description, points)
     {
         _isComplete = false;
     }
 
-    // Constructor para carga de archivos
-    public SimpleGoal(string name, string description, string points, bool isComplete) : base(name, description, points)
+    public SimpleGoal(string name, string description, int points, bool isComplete) : base(name, description, points)
     {
         _isComplete = isComplete;
     }
 
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
         _isComplete = true;
+        return _points;
     }
 
     public override bool IsComplete() => _isComplete;

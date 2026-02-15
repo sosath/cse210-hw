@@ -1,8 +1,11 @@
 public class EternalGoal : Goal
 {
-    public EternalGoal(string name, string description, string points) : base(name, description, points) { }
+    public EternalGoal(string name, string description, int points) : base(name, description, points) { }
 
-    public override void RecordEvent() { }
+    public override int RecordEvent() 
+    {
+        return _points; 
+    }
 
     public override bool IsComplete() => false;
 
