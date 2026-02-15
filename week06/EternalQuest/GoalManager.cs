@@ -38,6 +38,14 @@ public class GoalManager
                 case "5": RecordEvent(); break;
             }
         }
+
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine("\n==================================================");
+        Console.WriteLine("  ¡Gracias por usar Eternal Quest! ");
+        Console.WriteLine("  Sigue trabajando en tus metas para ser un héroe.");
+        Console.WriteLine("==================================================\n");
+        Console.ResetColor();
     }
 
     public void DisplayPlayerInfo()
@@ -69,7 +77,7 @@ public class GoalManager
         string name = Console.ReadLine();
         Console.Write("What is a short description of it? ");
         string desc = Console.ReadLine();
-        Console.Write("What is the amount of points associated with this goal? ");
+        Console.Write("What is the amount of points (100 - 1000) associated with this goal? ");
         int pts = int.Parse(Console.ReadLine());
 
         if (type == "1") _goals.Add(new SimpleGoal(name, desc, pts));
